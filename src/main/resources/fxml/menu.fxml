@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="18"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sudokuarena.controller.MenuController">
+
+    <Label text="Sudoku Arena" styleClass="title"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Difficulty:"/>
+        <ChoiceBox fx:id="difficultyChoice"/>
+    </HBox>
+
+    <Button text="Start Game" styleClass="primary" onAction="#onStart"/>
+    <Button text="Exit" styleClass="danger" onAction="#onExit"/>
+    <Button text="Logout" onAction="#onLogout"/>
+    <Button fx:id="adminBtn" text="Admin" onAction="#onAdmin"/>
+
+</VBox>

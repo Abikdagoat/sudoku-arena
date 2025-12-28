@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sudokuarena.controller.AdminController">
+
+
+    <Label text="Admin Panel" styleClass="title"/>
+
+    <TableView fx:id="table" prefWidth="700" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="colId" text="ID"/>
+            <TableColumn fx:id="colUsername" text="Username"/>
+            <TableColumn fx:id="colDifficulty" text="Difficulty"/>
+            <TableColumn fx:id="colTime" text="Time (sec)"/>
+            <TableColumn fx:id="colSolved" text="Solved"/>
+            <TableColumn fx:id="colCreated" text="Created At"/>
+        </columns>
+    </TableView>
+
+    <TableView fx:id="usersTable">
+        <columns>
+            <TableColumn fx:id="usernameCol" text="Username"/>
+            <TableColumn fx:id="roleCol" text="Role"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="15">
+        <Button text="Init Database" styleClass="primary" onAction="#onInitDb"/>
+        <Button text="Back to Menu" onAction="#onBack"/>
+    </HBox>
+
+</VBox>

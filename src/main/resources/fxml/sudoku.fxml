@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.sudokuarena.controller.SudokuController">
+
+    <top>
+        <HBox spacing="20" alignment="CENTER" style="-fx-padding:10;">
+            <Label text="Sudoku Arena" style="-fx-font-size:22px;"/>
+            <Label fx:id="difficultyLabel" text="EASY" />
+            <Label fx:id="timerLabel" text="00:00" style="-fx-font-size:16px;"/>
+        </HBox>
+    </top>
+
+    <center>
+        <GridPane fx:id="grid" alignment="CENTER" hgap="4" vgap="4" style="-fx-padding:16;"/>
+    </center>
+
+    <bottom>
+        <HBox spacing="12" alignment="CENTER" style="-fx-padding:12;">
+            <Button text="Hint" onAction="#onHint"/>
+            <Button text="Check" onAction="#onCheck"/>
+            <Button text="New Game" onAction="#onNewGame"/>
+            <Button text="Back to Menu" onAction="#onBack"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

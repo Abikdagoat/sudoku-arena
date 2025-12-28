@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sudokuarena.controller.RegisterController">
+
+    <Label text="Register"
+           style="-fx-font-size:24px; -fx-font-weight:bold;" />
+
+    <TextField fx:id="usernameField"
+               promptText="Username"
+               maxWidth="220"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   maxWidth="220"/>
+
+    <Button text="Create account"
+            onAction="#goRegister"
+            maxWidth="220"/>
+
+    <Button text="Back to Login"
+            onAction="#onBack"/>
+
+</VBox>

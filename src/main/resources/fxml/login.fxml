@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.sudokuarena.controller.LoginController">
+
+    <Label text="Sudoku Arena"
+           style="-fx-font-size:28px; -fx-font-weight:bold;" />
+
+    <TextField fx:id="usernameField"
+               promptText="Username"
+               maxWidth="220"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Password"
+                   maxWidth="220"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Login" onAction="#onLogin"/>
+        <Button text="Register" onAction="#onRegister"/>
+    </HBox>
+
+</VBox>
